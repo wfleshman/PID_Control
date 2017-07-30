@@ -25,7 +25,10 @@ For this environment, the process variables to be controlled are the amounts of 
 
 The first step in PID control is figuring out what the setpoints should be. 
 
-I decided my target altitude for a given state would be equal to the horizontal distance from the target as shown below. Therefore, if I was too low and off-target the craft should increase it's height back into the cone, and when the craft is above the cone it should decrease it's height. So my altitude setpoint is equal to the |x position + x velocity|.
+I decided my target altitude for a given state would be equal to the horizontal distance from the target as shown below. Therefore, if I was too low and off-target the craft should increase it's height back into the cone, and when the craft is above the cone it should decrease it's height. So my altitude setpoint is equal to:
+````
+|x position + x velocity|
+````
 ![Altitude Setpoint](/imgs/altitude.png)
 
 Similarly, the craft should always be angled toward the goal since the angle drives what direction the main boosters will send the craft. I figured if I was above the target I would want a perfect vertical angle, and if I was at the extreme edges I would want 45 degrees. 
