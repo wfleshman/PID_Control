@@ -1,4 +1,5 @@
 # PID-Control of OpenAI LunarLander-v2 (continuous)
+![Demo](/imgs/lander.gif)
 
 ## Dependencies
 ````
@@ -57,5 +58,4 @@ So we have everything we need, except that we don't know the values to use for t
 
 With the optimized values the rocket is able to land safely, and we can see that our PID controller is doing what we want:
 ![PID Controlled](/imgs/pid.png)
-![Demo](/imgs/lander.gif)
 
