@@ -1,5 +1,4 @@
 # PID-Control of OpenAI LunarLander-v2 (continuous)
-![Demo](/imgs/lander.gif)
 
 ## Dependencies
 ````
@@ -13,7 +12,7 @@ From [wikipedia](https://en.wikipedia.org/wiki/PID_controller):
 A proportional–integral–derivative controller (PID controller) is a control loop feedback mechanism (controller) commonly used in industrial control systems. A PID controller continuously calculates an error value e(t) as the difference between a desired setpoint and a measured process variable and applies a correction based on proportional, integral, and derivative terms (sometimes denoted P, I, and D respectively) which give their name to the controller type.
 
 ## LunarLander
-https://gym.openai.com/envs/LunarLanderContinuous-v2
+[OpenAI](https://gym.openai.com/envs/LunarLanderContinuous-v2)
 
 This is an environment from OpenAI gym. The goal is to land the craft safely between the goal posts. 
 
@@ -58,3 +57,5 @@ So we have everything we need, except that we don't know the values to use for t
 
 With the optimized values the rocket is able to land safely, and we can see that our PID controller is doing what we want:
 ![PID Controlled](/imgs/pid.png)
+![Demo](/imgs/lander.gif)
+
