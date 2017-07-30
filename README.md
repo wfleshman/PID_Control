@@ -33,9 +33,9 @@ Similarly, the craft should always be angled toward the goal since the angle dri
 
 The altitude and angle (as well as the velocities for each component) are known at each step. Therefore, the error can be calculated as the difference between our setpoints and the current altitude/angle. 
 
-To add proportional control to our control system, we adjust the boosters by some scalar multiple of the errors(i.e. a correction proportional to the error). Adj = k_p*error.
+To add proportional control to our control system, we adjust the boosters by some scalar multiple of the errors(i.e. a correction proportional to the error). Adj = k_p(error).
 
-To add derivative control we add the derivative of each control value to our adjustment. The derivative of position (the variables we're trying to control for) is velocity. Luckily the y velocity and angular velocities are given to us as part of the sensor readings in our state. We add the term to our adjustment with an additional parameter. Adj = k_p*error + k_d*derivative.
+To add derivative control we add the derivative of each control value to our adjustment. The derivative of position (the variables we're trying to control for) is velocity. Luckily the y velocity and angular velocities are given to us as part of the sensor readings in our state. We add the term to our adjustment with an additional parameter. ![equation](Adj = k_p*error + k_d*derivative).
 
 The final component of a PID controller is the Integral or sum of errors. This portion of a controller corrects for any biases in the system (like an misaligned component, or uncalibrated sensor). Since we have 100% sensor values in this problem the I component is not needed for the solution. 
 
