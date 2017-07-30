@@ -1,4 +1,4 @@
-# PID-Control of OpenAI LunarLander-v2 (continuous)
+# PID Control of OpenAI LunarLander-v2
 ![Demo](/imgs/lander.gif)
 
 ## Dependencies
