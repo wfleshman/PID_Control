@@ -47,7 +47,7 @@ To add proportional control to our control system, we adjust the boosters by som
 Adj = k_p*error
 ````
 
-To add derivative control we add the derivative of each control value to our adjustment. The derivative of position (the variables we're trying to control for) is velocity. Luckily the y velocity and angular velocities are given to us as part of the sensor readings in our state. We add the term to our adjustment with an additional parameter.
+To add derivative control we add the derivative of each control value to our adjustment. The derivative of position (the variables we're trying to control for) is velocity. Luckily the y velocity and angular velocities are given to us as part of the sensor readings in our state. We add the term to our adjustment with an additional parameter. Derivative control will help the craft slow its rate of fall as it approaches the landing.
 ````
 PD-Control
 Adj = k_p*error + k_d*derivative
